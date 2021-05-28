@@ -6,6 +6,11 @@
 --footer-color: rgba(255, 255, 255, 0.6);
 --footer-color-line: #2F303A;
 }
+/* * {
+    margin: 0;
+    padding: 0;
+    
+} */
 
 body {
     font-family: 'Roboto', sans-serif ;
@@ -75,7 +80,6 @@ address {
     color: var(--title-text-color);
 }
 .description {
-    font-family: roboto;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -84,7 +88,7 @@ address {
 
 /* section-portfolio */
 .section-portfolio {
-    background: #e6e6e6;
+    /* background: #e6e6e6; */
 }
 .depiction {
     font-weight: bold;
@@ -94,7 +98,6 @@ address {
     color: var(--title-text-color);
 }
 .value {
-    font-family: roboto;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -141,7 +144,7 @@ address {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
+    padding: 6px 22px;
     cursor: pointer;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -168,7 +171,6 @@ address {
 
 /* чем мы занимаемся & наша команда */
 .work-team {
-    font-family: roboto;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -179,10 +181,9 @@ address {
 
 /* section-four */
 .section-four {
-    background: #F5F4FA;
+    /* background: #F5F4FA; */
 }
 .name {
-    font-family: roboto;
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.18;
@@ -192,7 +193,6 @@ address {
     color: var(--title-text-color);
 }
 .position {
-    font-family: roboto;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -202,8 +202,6 @@ address {
 
 /* footer */
 .contacts-down .list {
-
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
