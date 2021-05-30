@@ -16,14 +16,13 @@ body {
     font-family: 'Roboto', sans-serif ;
     font-size: 14px;
     color: var(--primary-text-color)
-    
-}
+} 
 ul {
  list-style: none;   
-}
+} 
 a {
     text-decoration: none;
-}
+} 
 address {
     font-style: normal;
 }
@@ -32,7 +31,11 @@ address {
 .page-header {
     background: var(--header-color);
 }
-
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .site-nav .link {
     text-decoration: none;
     font-weight: 500;
@@ -68,8 +71,24 @@ address {
 /* section-one */
 .section-one {  
     background: var(--footer-color-line);
+    height: 600px;
 }
-
+.section-two .container {
+    /* padding-top: 94px; */
+}
+.section-two-list {
+    padding-top: 94px;
+    margin: 0;
+}
+.section-two-list li:not(:last-child){
+    margin-right: 30px;
+}
+.contacts-section-images li:not(:last-child){
+    margin-right: 30px;
+}
+.contacts-section-images li{
+    width: 370px;
+}
 /* section-two */
 .title {
     font-weight: bold;
@@ -78,17 +97,34 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    margin: 0;
 }
 .description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    padding-top: 10px;
+    margin: 0;
 }
 
 /* section-portfolio */
 .section-portfolio {
     /* background: #e6e6e6; */
+}
+.section-portfolio-images li {
+    border: 1px solid;
+    width: 370px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.section-portfolio-images {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+.section-portfolio-images li:not(:last-child){
+    margin-right: 30px;
 }
 .depiction {
     font-weight: bold;
@@ -109,10 +145,12 @@ address {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     color: var(--header-color);
+
 }
+
 
 /* button */
 .button-hero {
@@ -128,7 +166,7 @@ address {
 /* заказать услугу */
     background: #2196f3;
     box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.149);
-    border-radius: 4px;   
+    border-radius: 4px;
 }
 
 /* заказать услугу */
@@ -174,7 +212,7 @@ address {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
@@ -183,11 +221,28 @@ address {
 .section-four {
     /* background: #F5F4FA; */
 }
+/* .worker-list li {
+    border: 1px solid;
+    width: 270px;
+} */
+.worker-list li {
+    border: 1px solid;
+    width: 270px;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+}
+.worker-list {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.worker-list li:not(:last-child){
+    margin-right: 30px;
+}
 .name {
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.03em;
 
     color: var(--title-text-color);
@@ -195,7 +250,7 @@ address {
 .position {
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
