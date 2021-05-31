@@ -5,6 +5,8 @@
 --header-color: #ffffff;
 --footer-color: rgba(255, 255, 255, 0.6);
 --footer-color-line: #2F303A;
+--logo-style-font: 'Raleway', sans-serif;
+--black-color: #000000;
 }
 /* * {
     margin: 0;
@@ -26,8 +28,22 @@ a {
 address {
     font-style: normal;
 }
+span {
+    color:  #2196F3;
+}
+/* LOGO */
+.logo {
+    font-family: var(--logo-style-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
-/* header */
+/* HEADER */
 .page-header {
     background: var(--header-color);
 }
@@ -44,6 +60,30 @@ address {
     letter-spacing: 0.02em;
     
     color: var(--title-text-color);
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* вариант 1 */
+    /* width: 294px;    */
+}
+.site-nav li {
+
+    /* вариант 2 */
+    margin-left: 50px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-up {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-up li:not(:last-child){
+    margin-right: 50px;
 }
 
 .site-nav :hover,
@@ -79,15 +119,22 @@ address {
 .section-two-list {
     padding-top: 94px;
     margin: 0;
+    display: flex;
 }
 .section-two-list li:not(:last-child){
     margin-right: 30px;
 }
+
+/* IMAGES */
 .contacts-section-images li:not(:last-child){
     margin-right: 30px;
 }
 .contacts-section-images li{
     width: 370px;
+}
+.contacts-section-images {
+    display: flex;
+    margin-bottom: 94px;
 }
 /* section-two */
 .title {
@@ -107,24 +154,48 @@ address {
     padding-top: 10px;
     margin: 0;
 }
+/* IMAGES */
 
-/* section-portfolio */
+/* SECTION_PORTFOLIO */
 .section-portfolio {
-    /* background: #e6e6e6; */
+    background: var(--header-color);  
 }
-.section-portfolio-images li {
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.buttons li {
+    margin-left: 8px;
+}
+.container .card-set {
+    padding-top: 50px;
+    padding-bottom: 94px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
     border: 1px solid;
     width: 370px;
-    text-align: center;
     margin-bottom: 30px;
-    
 }
-.section-portfolio-images {
+.item:not(:last-child){
+    margin-right: 10px;
+}  
+.item h3 {
     margin-top: 20px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
+    margin-left: 24px;
+    margin-right: 24px;
 }
-.section-portfolio-images li:not(:last-child){
-    margin-right: 30px;
+.item p {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 .depiction {
     font-weight: bold;
@@ -139,15 +210,22 @@ address {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+/* SECTION_PORTFOLIO */
 
-/* hero */
+/* HERO */
 .hero {
+    padding-top: 200px;
+    /* padding-bottom: 280px; */
+    
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* text-align: center; */
+    text-align: center;  
     letter-spacing: 0.06em;
     color: var(--header-color);
+
+    text-transform: uppercase;
 
 }
 
@@ -167,6 +245,8 @@ address {
     background: #2196f3;
     box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.149);
     border-radius: 4px;
+    margin-top: 30px;
+    margin-left: 470px;
 }
 
 /* заказать услугу */
@@ -198,7 +278,7 @@ address {
 }
 
 
-/* Special content */
+/* SPECIAL_CONTENT */
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -206,20 +286,22 @@ address {
     height: 1px;
     margin: -1px; 
 }
+/* SPECIAL_CONTENT */
 
 /* чем мы занимаемся & наша команда */
 .work-team {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
-    /* text-align: center; */
+    text-align: center; 
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    padding-top: 94px;
 }
 
-/* section-four */
+/* SECTION_FOUR */
 .section-four {
-    /* background: #F5F4FA; */
+    background: #F5F4FA; 
 }
 /* .worker-list li {
     border: 1px solid;
@@ -234,6 +316,9 @@ address {
 .worker-list {
     margin-top: 30px;
     margin-bottom: 10px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 .worker-list li:not(:last-child){
     margin-right: 30px;
@@ -254,8 +339,10 @@ address {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+/* SECTION_FOUR */
 
-/* footer */
+
+/* FOOTER */
 .contacts-down .list {
     font-size: 14px;
     line-height: 1.71;
@@ -264,6 +351,7 @@ address {
 }
 .footer-line {
     background: var(--footer-color-line);
+    height: 252px;
 }
 .list:hover,
 .list:focus {
@@ -275,5 +363,4 @@ address {
     letter-spacing: 0.03em;
     color: var(--header-color);
 }
-
-/*  */
+/* FOOTER */
