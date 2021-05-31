@@ -30,7 +30,7 @@ address {
 }
 span {
     color:  #2196F3;
-}
+} 
 /* LOGO */
 .logo {
     font-family: var(--logo-style-font);
@@ -42,7 +42,6 @@ span {
     padding-top: 24px;
     padding-bottom: 25px;
 }
-
 /* HEADER */
 .page-header {
     background: var(--header-color);
@@ -61,29 +60,26 @@ span {
     
     color: var(--title-text-color);
 }
-
 .site-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* вариант 1 */
-    /* width: 294px;    */
+    width: 245px;
 }
-.site-nav li {
+.site-nav li:not(:last-child){
+    margin-right: 50px;
+}    
 
-    /* вариант 2 */
-    margin-left: 50px;
-}
 .nav {
-    display: flex;
+    display: flex; 
+    align-items: center;
     justify-content: space-between;
+    
 }
-.contacts-up {
+.contacts-up { 
     display: flex;
-    justify-content: space-between;
+    margin-left: 331px;   
 }
 .contacts-up li:not(:last-child){
-    margin-right: 50px;
+    margin-right: 50px;  
 }
 
 .site-nav :hover,
@@ -178,12 +174,13 @@ span {
     flex-wrap: wrap;
 }
 .item {
-    border: 1px solid;
+    border: 1px solid #EEEEEE;
     width: 370px;
     margin-bottom: 30px;
+    margin-right: 30px;
 }
-.item:not(:last-child){
-    margin-right: 10px;
+.item:nth-child(3n){
+    margin-right: 0;
 }  
 .item h3 {
     margin-top: 20px;
@@ -216,7 +213,6 @@ span {
 .hero {
     padding-top: 200px;
     /* padding-bottom: 280px; */
-    
 
     font-weight: 900;
     font-size: 44px;
@@ -228,10 +224,8 @@ span {
     text-transform: uppercase;
 
 }
-
-
 /* button */
-.button-hero {
+.button-hero { 
    border: 1px solid transparent;
    font-weight: bold;
    font-size: 16px;
@@ -246,7 +240,7 @@ span {
     box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.149);
     border-radius: 4px;
     margin-top: 30px;
-    margin-left: 470px;
+    margin-left: 460px;
 }
 
 /* заказать услугу */
@@ -303,12 +297,8 @@ span {
 .section-four {
     background: #F5F4FA; 
 }
-/* .worker-list li {
-    border: 1px solid;
-    width: 270px;
-} */
 .worker-list li {
-    border: 1px solid;
+    border: 1px solid transparent;
     width: 270px;
     text-align: center;
     border-radius: 0 0 4px 4px;
@@ -319,6 +309,10 @@ span {
     display: flex;
     padding-top: 50px;
     padding-bottom: 94px;
+}
+.worker-list-name {
+    background: #ffffff;
+    box-shadow: 0 1px 3px;
 }
 .worker-list li:not(:last-child){
     margin-right: 30px;
@@ -351,7 +345,7 @@ span {
 }
 .footer-line {
     background: var(--footer-color-line);
-    height: 252px;
+    /* height: 252px; */
 }
 .list:hover,
 .list:focus {
