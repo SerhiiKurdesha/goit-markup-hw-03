@@ -7,6 +7,7 @@
 --footer-color-line: #2F303A;
 --logo-style-font: 'Raleway', sans-serif;
 --black-color: #000000;
+--cards-color: #EEEEEE;
 }
 /* * {
      margin: 0; 
@@ -227,14 +228,16 @@ h1 h2 h3 h4 h5 {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--cards-color);
+    border-block: none;
 }
 .value {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--cards-color);
+    border-block-start: none;
 }
 
 /* SECTION_PORTFOLIO */
