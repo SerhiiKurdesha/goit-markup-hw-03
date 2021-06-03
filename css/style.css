@@ -13,7 +13,6 @@
     margin: 0; 
     padding: 0; 
 }
-
 body {
     font-family: 'Roboto', sans-serif ;
     font-size: 14px;
@@ -57,7 +56,8 @@ h1 h2 h3 h4 h5 {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--header-color);
-    margin-top: 60px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 /* SECTION_HEADER */
 .page-header {
@@ -377,7 +377,10 @@ h1 h2 h3 h4 h5 {
 
 /* FOOTER_SECTION */
 .contacts-down {
-    /* padding-left: 0; */
+    display: inline-block;
+}
+.contacts-down li:not(:last-child){
+    margin-bottom: 9px;
 }
 .contacts-down .list {
     font-size: 14px;
@@ -388,11 +391,9 @@ h1 h2 h3 h4 h5 {
 .tel-list {
 }
 .footer-line {
-    background: var(--footer-color-line); 
-}
-.footer-line .container {
-    /* display: flex;
-    align-items: center; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--footer-color-line);
 }
 .list:hover,
 .list:focus {
