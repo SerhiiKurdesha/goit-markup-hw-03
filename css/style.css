@@ -9,10 +9,10 @@
 --black-color: #000000;
 --cards-color: #EEEEEE;
 }
-/* * {
+* {
      margin: 0; 
     padding: 0; 
-}  */
+}
 
 body {
     font-family: 'Roboto', sans-serif ;
@@ -35,6 +35,7 @@ span {
 }
 h1 h2 h3 h4 h5 {
     margin: 0;
+    padding: 0;
 }
 /* LOGO */
 .logo {
@@ -329,6 +330,9 @@ h1 h2 h3 h4 h5 {
     padding-top: 94px;
     padding-bottom: 94px; 
 }
+.work-team {
+    margin-bottom: 50px;
+}
 .worker-list li {
     width: 270px;
     text-align: center;
@@ -336,7 +340,6 @@ h1 h2 h3 h4 h5 {
 }
 .worker-list {
     display: flex;
-    padding-top: 50px;
     padding-left: 0;
     margin: 0; 
 }
@@ -347,9 +350,12 @@ h1 h2 h3 h4 h5 {
 .worker-list li:not(:last-child){
     margin-right: 30px;
 }
-.name {
+.worker-list div {
     padding-top: 30px;
-    padding-bottom: 8px;
+    padding-bottom: 30px;
+}
+.name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -358,7 +364,6 @@ h1 h2 h3 h4 h5 {
     color: var(--title-text-color);
 }
 .position {
-    padding-bottom: 30px;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.18;
